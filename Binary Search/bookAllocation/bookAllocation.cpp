@@ -51,6 +51,8 @@ int allocateBooks(vector<int> arr, int n, int m)
         {
             s = mid + 1;
         }
+
+        mid = s + (e - s) / 2;
     }
 
     return ans;
@@ -58,7 +60,7 @@ int allocateBooks(vector<int> arr, int n, int m)
 
 int main()
 {
-    vector<int> books = {10, 20, 30, 40};
+    vector<int> books = {10, 20, 30, 40, 50};
     int size = books.size();
 
     int students = 2;
